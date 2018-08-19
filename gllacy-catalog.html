@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <!--Временный фон-->
+    <style>
+    body {
+      background-color: #849d8f;
+      }
+    </style>
   </head>
   <body>
-    <header class="main-header" href="index.html">
+    <header class="main-header">
       <nav>
-        <a class="main-header-logo">
+        <a class="main-header-logo"  href="index.html">
           <img src="img/index-logo.svg" width="150" height="100" alt="Логотип «Глейси»">
         </a>
         <ul class="site-navigation">
@@ -16,13 +22,13 @@
           <li><a href="info-about-company.html">О компании</a></li>
         </ul>
         <span class="search">
-          <img src="img/search.svg" width="40" height="40" alt="Поиск">
+          <img src="img/search.svg" width="17" height="17" alt="Поиск">
         </span>
         <ul>
-          <li class="login-link">Вход</li>
+          <li class="login-link"><img src="img/login-link.svg" width="21" height="19" alt="Корзина">Вход</li>
         </ul>
         <span class="basket">
-          <img src="img/basket.svg" width="40" height="40" alt="Корзина">2 товара
+          <img src="img/basket.svg" width="21" height="20" alt="Корзина">Пусто
         </span>
       </nav>
       <p>
@@ -234,12 +240,13 @@
     </main>
 
     <footer>
+
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32">Твиттер</a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32">Инстаграм</a></li>
+          <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32">Фейсбук</a></li>
+          <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32">Вконтакте</a></li>
         </ul>
       </div>
 
@@ -253,7 +260,7 @@
       </div>
 
       <div class="footer-developer">
-        <img src="img/logo-html.jpg" width="108" height="39" alt="htmlacademy">
+        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="htmlacademy">
         <p>
           Сделано в HTML Academy © 2017
         </p>
@@ -263,15 +270,15 @@
     <div class="pop-up-basket visually-hidden">
       <table>
         <tr>
-          <td><span>X</span></td>
-          <td><img src="img/ice-scream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+          <td><img src="img/X.svg" width="11" height="11" alt="Отменить"></td>
+          <td><img src="img/ice-scream-1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
           <td>Пломбир с апельсиновым джемом</td>
           <td>1,5 кг х <span>200 руб.</span></td>
           <td>300 руб.</td>
         </tr>
         <tr>
-          <td><span>X</span></td>
-          <td><img src="img/ice-scream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада"></td>
+          <td><img src="img/X.svg" width="11" height="11" alt="Отменить"></td>
+          <td><img src="img/ice-scream-3-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада"></td>
           <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
           <td>1,5 кг х <span>300 руб.</span></td>
           <td>450 руб.</td>

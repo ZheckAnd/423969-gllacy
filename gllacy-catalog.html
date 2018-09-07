@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -14,9 +15,9 @@
           <img src="img/index-logo.svg" width="154" height="64" alt="Логотип «Глейси»">
         </a>
         <ul class="site-navigation">
-          <li><a class="button button-transparent" href="#"><span>Каталог</span></a></li>
+          <li><a class="button button-transparent active" href="#"><span>Каталог</span></a></li>
           <li><a class="button button-transparent" href="#"><span>Доставка и оплата</span></a></li>
-          <li><a class="button button-transparent" href="#"><span>О компании</span></a></li>
+          <li><a class="button button-transparent" href="#"><span>О Компании</span></a></li>
         </ul>
 
         <a class="button button-transparent search" href="#">
@@ -59,13 +60,17 @@
 
           <div  class="filter-select">
             <p class="filter-sign">Сортировка:</p>
-            <label class="visually-hidden" for="filter-sort-option">Сортировка:</label>
+
             <select class="filter-sort-option" size="1" id="filter-sort-option">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
               <option value="fat-content">по жирности</option>
             </select>
+
+            <label class="filter-label-select" for="filter-sort-option">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#fff" d="M5.5 10L0 0h11"/></svg>
+            </label>
           </div>
 
           <div class="price">
@@ -83,7 +88,7 @@
           </div>
 
           <div class="fat-content">
-            <p class="filter-sign">Жирность</p>
+            <p class="filter-sign">Жирность:</p>
             <ul class="fat-content-list">
               <li>
                 <input class="input-radio" type="radio" name="fat-content" id="null-percent">
@@ -300,6 +305,7 @@
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
         </ul>
       </div>
     </main>

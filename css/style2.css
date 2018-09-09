@@ -1862,7 +1862,7 @@ a:active .news-article {
 }
 
 .pop-up-feedback {
-  position: absolute;
+  position: fixed;
   top: 338px;
   left: calc(50% - 237px);
   -webkit-box-sizing: border-box;

@@ -88,15 +88,15 @@ if (siteNavigationBasketRed) {
 if (feedbackButton) {
   feedbackButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    navPopUpFeedback.classList.add("visible");
+    navPopUpFeedback.classList.add("visible-slow");
     navPopUpFeedbackClose.addEventListener("click", function (evt) {
-      navPopUpFeedback.classList.remove("visible");
+      navPopUpFeedback.classList.remove("visible-slow");
     });
     window.addEventListener("keydown", function (evt) {
       if (evt.keyCode === 27) {
-        if (navPopUpFeedback.classList.contains("visible")) {
+        if (navPopUpFeedback.classList.contains("visible-slow")) {
           evt.preventDefault();
-          navPopUpFeedback.classList.remove("visible");
+          navPopUpFeedback.classList.remove("visible-slow");
         }
       }
     });

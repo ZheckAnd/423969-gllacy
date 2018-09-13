@@ -1275,6 +1275,10 @@ a:active .news-article {
           flex-grow: 1;
 }
 
+.filter-filling {
+  margin-top: 1px;
+}
+
 .filter-sort,
 .filter-horisontal-slider,
 .fat-content-list,
@@ -1324,6 +1328,11 @@ a:active .news-article {
   font-weight: 500;
 }
 
+.filter-horisontal-slider,
+.fat-content-list {
+  margin-left: 14px;
+}
+
 .filter-sort-option,
 .fat-content-list li,
 .filter-filling-list li {
@@ -1335,9 +1344,11 @@ a:active .news-article {
   -moz-appearance: none;
   appearance: none;
 
-  min-width: 200px;
-  padding-left: 10px;
-
+  min-width: 195px;
+  padding-left: 14px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   color: #ffffff;
 }
@@ -1348,7 +1359,7 @@ a:active .news-article {
 
 .filter-label-select {
   position: absolute;
-  top: 41px;
+  top: 42px;
   left: 179px;
 
   width: 11px;
@@ -1365,10 +1376,6 @@ a:active .news-article {
 .filter-sort-option:hover ~ .filter-label-select path,
 .filter-sort-option:focus ~ .filter-label-select path  {
   fill: #323232;
-}
-
-.filter-sort-option option {
-  padding-top: 13px;
 }
 
 .filter-horisontal-slider {
@@ -1503,11 +1510,13 @@ a:active .news-article {
   border-radius: 50%;
 }
 
-.label-radio:hover::before {
+.label-radio:hover::before,
+.label-radio:focus::before {
   border-color: rgba(248, 247, 244, 1);
 }
 
-.label-radio:hover::after {
+.label-radio:hover::after,
+.label-radio:focus::after {
   background-color: rgba(248, 247, 244, 1);
 }
 
@@ -1541,7 +1550,7 @@ a:active .news-article {
 
   position: absolute;
   left: -30px;
-  top: -2px;
+  top: -1px;
 
   width: 20px;
   height: 20px;
@@ -1559,8 +1568,8 @@ a:active .news-article {
   content: "";
 
   position: absolute;
-  left: -30px;
-  top: -2px;
+  left: -31px;
+  top: -1px;
 
   width: 25px;
   height: 22px;
@@ -1574,8 +1583,14 @@ a:active .news-article {
   display: block;
 }
 
-.filter-filling-label:hover::before {
+.filter-filling-label:hover::before,
+.filter-filling-label:focus::before {
   border-color: rgba(248, 247, 244, 1);
+}
+
+.filter-filling-label:hover::after,
+.filter-filling-label:focus::after {
+  background-image: url("../img/checkbox-on-white.svg");
 }
 
 .filter-filling-checkbox:disabled + .filter-filling-label::before {
@@ -1602,15 +1617,20 @@ a:active .news-article {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 15px;
 
   padding-top: 12px;
-  padding-bottom: 8px;
-  padding-left: 15px;
+  padding-bottom: 7px;
+  padding-left: 14px;
 
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+}
+
+.filter-select .filter-sign,
+.filter-filling .filter-sign {
+  margin-left: 13px;
 }
 
 .pagination {
